@@ -9,6 +9,7 @@
 	private var moveDirection : Vector3 = Vector3.zero;
 	private var footSteps;
 	private var tripAudio : AudioClip;
+	private var wallAudio : AudioClip;
 	var previousPress : String;
 	var currentPress : String;
 	public var tripped;

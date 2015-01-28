@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Hunter.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WalkScript.js">
     <Files>
-      <File FileName="Assets\Scripts\WalkScript.js" Line="166" Column="16" />
-      <File FileName="Assets\Scripts\Hunter.js" Line="7" Column="17" />
+      <File FileName="Assets/Scripts/Hunter.js" Line="83" Column="4" />
+      <File FileName="Assets/Scripts/PickUp.js" Line="58" Column="1" />
+      <File FileName="Assets/Scripts/WalkScript.js" Line="12" Column="36" />
+      <File FileName="Assets/Scripts/GeyserSwitch.js" Line="13" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

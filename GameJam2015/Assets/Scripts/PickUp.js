@@ -20,6 +20,7 @@ function OnTriggerEnter(other : Collider)
 		{
 			other.gameObject.SetActive(false);
 			amountFood = amountFood + 1;
+			Debug.Log(amountFood);
 			//setCountText();
 		}
 	if (other.gameObject.tag == "Geyser")
@@ -27,6 +28,7 @@ function OnTriggerEnter(other : Collider)
 		if(Input.GetKey("w"))
 		{
 			sendFood();
+			Debug.Log(amountFood);
 		}
 	}
 	
@@ -60,7 +62,7 @@ function sendFood()
 	if(amountFood >= 1)
 	{
 		amountFood = amountFood - 1;
-		audio.PlayOneShot(swoosh,1F);
+		//audio.PlayOneShot(swoosh,1F);
 	}
 	else
 	{

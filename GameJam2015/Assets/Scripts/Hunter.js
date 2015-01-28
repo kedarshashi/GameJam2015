@@ -25,7 +25,7 @@ function Start ()
 // Update is called once per frame
 function Update ()
 {
-	print(heTripped);
+	//print(heTripped);
 
 	if (Input.GetButtonDown("StepLeft")) 
 	{
@@ -80,7 +80,7 @@ function Update ()
 		}
 	}
 			
-	print(heTripped);
+	//print(heTripped);
 	//heardTrip();
 	
 }
