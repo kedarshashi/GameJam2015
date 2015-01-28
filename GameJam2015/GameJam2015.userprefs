@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WalkScript.js">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Hunter.js">
     <Files>
-      <File FileName="Assets/Scripts/Rotate.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/WalkScript.js" Line="82" Column="65" />
-      <File FileName="Assets/Scripts/Hunter.js" Line="124" Column="91" />
+      <File FileName="Assets\Scripts\WalkScript.js" Line="166" Column="16" />
+      <File FileName="Assets\Scripts\Hunter.js" Line="7" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -7,7 +7,8 @@
 	var isLStillDown = false;
 	var isRStillDown = false;
 	private var moveDirection : Vector3 = Vector3.zero;
-	var AudioFile: AudioClip;
+	private var footSteps;
+	private var tripAudio : AudioClip;
 	var previousPress : String;
 	var currentPress : String;
 	public var tripped;
@@ -31,6 +32,8 @@
 		tripped = false;
 		previousPress = "";
 		deltatimer = 0;
+		tripAudio = Resources.Load("Audio/Player/FallingFinal",AudioClip);
+		footSteps = Resources.LoadAll("Audio/Player/Footsteps",AudioClip);
 	}
 	
 	//----------------------------=Update=------------------------
@@ -65,7 +68,7 @@
 				
 				isLStillDown = true;
 				// Move the controller and make sound
-				audio.clip = AudioFile;
+				audio.clip = footSteps[Random.Range(0,footSteps.length)];
 				audio.Play();
 				previousPress = currentPress;
 
@@ -73,6 +76,7 @@
 			}
 			else
 			{
+				
 				test();
 				print("finished tripping");
 				tripped= false;
@@ -108,13 +112,17 @@
 				
 				isRStillDown = true;
 				// Move the controller
-				audio.clip = AudioFile;
+				audio.clip = footSteps[Random.Range(0,footSteps.length)];
 				audio.Play();
+				
 				previousPress = currentPress;
+	
 
 			}
 			else
 			{
+				audio.clip = tripAudio;
+				audio.Play();
 				//tripStun();
 				//StartCoroutine(WaitForStunToEnd());
 				test();
@@ -154,7 +162,8 @@
 	function tripping()
 	{
 		//Debug.log("YOU FELL!");
-
+		audio.clip = tripAudio;
+		audio.Play();
 		tripTimer -= Time.deltaTime;
 		
 		while(tripTimer >= 0)
